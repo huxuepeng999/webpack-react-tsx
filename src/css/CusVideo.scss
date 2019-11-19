@@ -1,0 +1,109 @@
+.CusVideo {
+    position: relative;
+    height: 160px;
+    .optionMain-player {
+        object-fit: fill;
+    }
+    .video-controls {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        .playBtn-box {
+            flex: 1;
+        }
+        .playBtn {
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            border: 1px solid #7fee1d;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            :nth-child(1) {
+                width: 0;
+                height: 0;
+                border-top: 10px solid transparent;
+                border-left: 20px solid #ff5a00;
+                border-bottom: 10px solid transparent;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                top: 0;
+                bottom: 0;
+            }
+        }
+        .vc-time-muted-bar {
+            width: 100%;
+            display: flex;
+            height: 20px;
+            margin-bottom: 5px;
+        }
+        .vc-time-start {
+            margin-left: 5px;
+            position: relative;
+            bottom: 0;
+            color: white;
+            width: 50px;
+            text-align: center;
+        }
+        .vc-time-end {
+            position: relative;
+            bottom: 0;
+            color: white;
+            width: 50px;
+            text-align: center;
+        }
+        .vc-muted {
+            cursor: pointer;
+            position: relative;
+            color: white;
+            bottom: 0;
+        }
+    
+        .vc-bar {
+            height: 4px;
+            background: #ccc;
+            clear: both;
+            position: relative;
+            line-height: 1;
+            border-radius: 3px;
+            cursor: pointer;
+            flex: 1;
+            bottom: -50%;
+        }
+    
+        .vc-bar-current {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            background: red;
+            border-radius: 3px;
+        }
+    
+        .vc-bar-current:after {
+            content: '';
+            display: block;
+            height: 5px;
+            width: 5px;
+            background: #fff;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: scale(2);
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .vc-screen {
+            margin: 0 5px;
+            color: white;
+        }
+    }
+}

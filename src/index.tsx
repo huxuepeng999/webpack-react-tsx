@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import { Hello } from "./components/Hello";
+import { CusVideo } from "./components/CusVideo";
 
 ReactDOM.render(
-    <Hello compiler="TypeScript" framework="React" />,
+    <CusVideo compiler="TypeScript" framework="React" />,
     document.getElementById('root')
 );
