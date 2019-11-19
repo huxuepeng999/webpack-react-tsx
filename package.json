@@ -36,7 +36,7 @@
     "webpack-dev-middleware": "^3.7.2",
     "webpack-dev-server": "^3.9.0",
     "webpack-merge": "^4.2.2",
-    "webpack-sources": "^1.4.3",
+    "webpack-sources": "^1.4.3"
   },
   "dependencies": {
     "@types/react": "^16.9.11",
