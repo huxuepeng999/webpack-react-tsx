@@ -1,13 +1,16 @@
 import React from "react";
 import '../css/CusVideo.scss'
+import Cordova from '../cordova/cordova'
 
 export interface HelloProps { compiler: string; framework: string; }
 
 export class CusVideo extends React.Component<HelloProps, {}> {
 
+
     constructor(props:any) {
         super(props)
 
+        Cordova.init()
         this.onEndVideo = this.onEndVideo.bind(this)
     }
 
@@ -124,6 +127,7 @@ export class CusVideo extends React.Component<HelloProps, {}> {
                         width="100%" height="160px" 
                         poster={""} src={"https://media.w3.org/2010/05/sintel/trailer_hd.mp4"}
                         onEnded={this.onEndVideo}
+                        playsinline={true} webkit-playsinline="true"
                     >
                     </video>
                     <div className="video-controls">

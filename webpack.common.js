@@ -1,26 +1,20 @@
 const path = require('path');
-const {CleanWebpackPlugin} = require('clean-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack')
 
 module.exports = {
   entry: {
     app: './src/index.tsx'
-  },
+  },  
   output: {
     filename: '[name].[chunkhash].js',
-    path: path.resolve(__dirname, './dist'),
-    publicPath: '/'
+    path: path.resolve(__dirname, './dist')
+    // publicPath: '/'
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".json"]
   },
   plugins: [
-    new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({
-      title: '模版',
-      template: './src/index.html'
-    })
+    
   ],
   module: {
     rules: [
