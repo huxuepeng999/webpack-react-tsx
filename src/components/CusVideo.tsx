@@ -118,7 +118,7 @@ export class CusVideo extends React.Component<HelloProps, {}> {
     }
     render() {
         return (
-            <div>
+            <div className="video-box">
                 <div style={{height:'100px'}}>
                     头部
                 </div>
@@ -147,6 +147,7 @@ export class CusVideo extends React.Component<HelloProps, {}> {
                         </div>
                     </div>
                 </div>
+                
             </div>
         )
     }
