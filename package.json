@@ -49,6 +49,6 @@
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "uglifyjs-webpack-plugin": "^2.2.0",
-    "yargs-parser": "^16.1.0"
+    "yargs-parser": "^19.0.4"
   }
 }
