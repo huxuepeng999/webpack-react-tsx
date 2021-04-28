@@ -48,7 +48,7 @@
     "lodash": "^4.17.15",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "uglifyjs-webpack-plugin": "^2.2.0",
-    "yargs-parser": "^16.1.0"
+    "uglifyjs-webpack-plugin": "^1.1.2",
+    "yargs-parser": "^20.2.7"
   }
 }
