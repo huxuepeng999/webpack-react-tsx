@@ -7,6 +7,7 @@ const pro1 = async () => {
 };
 const p2 = async () => {
   const c = await pro1();
+  console.log('res===c', c);
 };
 p2();
 // let wake = (time: number) => {
