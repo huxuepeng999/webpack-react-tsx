@@ -5,5 +5,6 @@ interface Navigator {
 interface Window {
     webkit: any,
     cordova: any,
+    common: any;
     doneClick: () => void,
 }

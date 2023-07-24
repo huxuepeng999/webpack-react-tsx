@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-// import Home from './components/home'
+import Home1 from './components/home'
 // import Home from "./pages/home"; // jsbrige
 // import Home from "./pages/createjs1/index"; // jsbrige
 // import HOC from "./pages/HOC";
@@ -15,5 +15,7 @@ const f3 = (x: number) => x / 3;
 
 compose<(x: number) => number>(f1, f2, f3)(11)
 
+import P1 from "./pages/p1";
+ReactDOM.render(<P1></P1>, document.getElementById("root"));
 
-ReactDOM.render(<Home></Home>, document.getElementById("root"));
+// ReactDOM.render(<Home></Home>, document.getElementById("root"));

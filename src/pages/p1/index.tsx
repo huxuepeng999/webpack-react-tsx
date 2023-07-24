@@ -5,7 +5,8 @@ const P1 = () => {
   const [val, setVal] = useState("");
   // console.log("res===init");
   useEffect(() => {
-    // console.log("res===2", count);
+    console.log("res===2", count);
+    // setVal(val)
   }, [count]);
 
   const btnClick = (event: any) => {
@@ -22,8 +23,8 @@ const P1 = () => {
       <button onClick={btnClick}>点击</button>
       {/* <Child val={val} onChange={onChange}></Child> */}
       {/* <Child val={val} onChange={onChangeUck}></Child> */}
-      {/* <ChildMemo val={val} onChange={onChange}></ChildMemo> */}
-      <ChildMemo val={val} onChange={onChangeUck}></ChildMemo>
+      <ChildMemo val={val} onChange={onChange}></ChildMemo>
+      {/* <ChildMemo val={val} onChange={onChangeUck}></ChildMemo> */}
       {/* <Child2 val={val}></Child2> */}
       <Child2Memo val={val}></Child2Memo>
     </div>
@@ -32,7 +33,7 @@ const P1 = () => {
 
 const Child = (props: any) => {
   const { val, onChange } = props;
-  // console.log("res===3", val);
+  console.log("res===Child", val);
   return <input value={val} onChange={onChange}></input>;
 };
 // Child+useCallback优化
@@ -40,7 +41,7 @@ const ChildMemo = React.memo(Child);
 
 const Child2 = (props: any) => {
   const { val } = props;
-  // console.log('res===child2',val)
+  console.log('res===child2',val)
   return <div>{val}</div>;
 }
 //Child2优化

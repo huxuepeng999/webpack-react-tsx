@@ -7,7 +7,7 @@ class I18NOther {
       if (this.instance == null) {
         this.instance = new I18NOther();
       }
-      return I18NOther.instance;
+      return this.instance;
     }
 
     getModule() {
